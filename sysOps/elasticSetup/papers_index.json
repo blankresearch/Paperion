@@ -1,0 +1,117 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "analysis": {
+      "analyzer": {
+        "custom_text_analyzer": {
+          "type": "standard"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "ID": {
+        "type": "long"
+      },
+      "DOI": {
+        "type": "keyword"
+      },
+      "DOI2": {
+        "type": "keyword"
+      },
+      "Title": {
+        "type": "text",
+        "analyzer": "custom_text_analyzer"
+      },
+      "Author": {
+        "type": "text",
+        "analyzer": "custom_text_analyzer"
+      },
+      "Year": {
+        "type": "keyword"
+      },
+      "Month": {
+        "type": "keyword"
+      },
+      "Day": {
+        "type": "keyword"
+      },
+      "Volume": {
+        "type": "keyword"
+      },
+      "Issue": {
+        "type": "keyword"
+      },
+      "First_page": {
+        "type": "keyword"
+      },
+      "Last_page": {
+        "type": "keyword"
+      },
+      "Journal": {
+        "type": "text",
+        "analyzer": "custom_text_analyzer"
+      },
+      "ISBN": {
+        "type": "keyword"
+      },
+      "ISSNP": {
+        "type": "keyword"
+      },
+      "ISSNE": {
+        "type": "keyword"
+      },
+      "MD5": {
+        "type": "keyword"
+      },
+      "Filesize": {
+        "type": "long"
+      },
+      "TimeAdded": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+      },
+      "JOURNALID": {
+        "type": "keyword"
+      },
+      "AbstractURL": {
+        "type": "keyword"
+      },
+      "Attribute1": {
+        "type": "text"
+      },
+      "Attribute2": {
+        "type": "text"
+      },
+      "Attribute3": {
+        "type": "text"
+      },
+      "Attribute4": {
+        "type": "text"
+      },
+      "Attribute5": {
+        "type": "text"
+      },
+      "Attribute6": {
+        "type": "keyword"
+      },
+      "visible": {
+        "type": "keyword"
+      },
+      "PubmedID": {
+        "type": "keyword"
+      },
+      "PMC": {
+        "type": "keyword"
+      },
+      "PII": {
+        "type": "keyword"
+      },
+      "abstract": {
+        "type": "text",
+        "analyzer": "custom_text_analyzer"
+      }
+    }
+  }
+}

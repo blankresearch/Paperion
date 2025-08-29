@@ -1,0 +1,20 @@
+{
+    "mappings": {
+        "properties": {
+            "ID": {
+                "type": "integer"
+            },
+            "DOICode": {
+                "type": "keyword"
+            },
+            "Publisher": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                }
+            }
+        }
+    }
+}

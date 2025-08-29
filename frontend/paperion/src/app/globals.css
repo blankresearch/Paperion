@@ -1,0 +1,336 @@
+#__next-build-watcher {
+  display: none !important;
+}
+
+svg[aria-label="Next.js logo"],
+svg path[stroke*="next_logo"] {
+  display: none !important;
+}
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "1001";
+  src: url("/fonts/1001.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "2001";
+  src: url("/fonts/2001.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "3003";
+  src: url("/fonts/3003.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "2003";
+  src: url("/fonts/2003.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "3004";
+  src: url("/fonts/3004.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "3002";
+  src: url("/fonts/3002.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "3001";
+  src: url("/fonts/3001.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "2002";
+  src: url("/fonts/2002.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "2004";
+  src: url("/fonts/2004.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "4001";
+  src: url("/fonts/4001.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "4001";
+  src: url("/fonts/4001.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "4003";
+  src: url("/fonts/4003.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "4004";
+  src: url("/fonts/4004.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "4005";
+  src: url("/fonts/4005.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-4005 {
+  font-family: "4005", sans-serif;
+}
+
+@font-face {
+  font-family: "1002";
+  src: url("/fonts/1002.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-1002 {
+  font-family: "1002", serif;
+}
+
+@font-face {
+  font-family: "5001";
+  src: url("/fonts/5001.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-5001 {
+  font-family: "5001", sans-serif;
+}
+
+@font-face {
+  font-family: "5002";
+  src: url("/fonts/5002.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-5002 {
+  font-family: "5002", sans-serif;
+}
+
+@font-face {
+  font-family: "5003";
+  src: url("/fonts/5003.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-5003 {
+  font-family: "5003", sans-serif;
+}
+
+.font-1001 {
+  font-family: "1001", serif;
+}
+
+.font-2001 {
+  font-family: "2001", serif;
+}
+
+.font-2002 {
+  font-family: "2002", serif;
+}
+
+.font-2003 {
+  font-family: "2003", serif;
+}
+
+.font-2004 {
+  font-family: "2004", serif;
+}
+
+.font-3001 {
+  font-family: "3001", serif;
+}
+
+.font-3002 {
+  font-family: "3002", serif;
+}
+
+.font-3003 {
+  font-family: "3003", serif;
+}
+
+.font-3004 {
+  font-family: "3004", serif;
+}
+
+.font-4001 {
+  font-family: "4001", sans-serif;
+}
+
+.font-4002 {
+  font-family: "4002", sans-serif;
+}
+
+.font-4003 {
+  font-family: "4003", sans-serif;
+}
+
+.font-4004 {
+  font-family: "4004", sans-serif;
+}
+
+/* Central Colors */
+
+:root {
+  --color-1: #000068;
+  --color-2: #000023;
+  --color-3: #dcdcff;
+}
+
+.text-color-prime {
+  color: var(--color-1);
+}
+
+.text-color-even {
+  color: var(--color-2);
+}
+
+.text-color-odd {
+  color: var(--color-3);
+}
+
+.bg-color-prime {
+  background-color: var(--color-1);
+}
+
+.bg-color-even {
+  background-color: var(--color-2);
+}
+
+.bg-color-odd {
+  background-color: var(--color-3);
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Slider switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

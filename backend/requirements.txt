@@ -1,0 +1,11 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+elasticsearch==8.15.1
+requests==2.32.3
+PyMuPDF==1.24.9
+python-dotenv==1.0.1
+cryptography==43.0.1
+openai==1.50.2
+beautifulsoup4==4.12.3
+retrying==1.3.4
+urllib3==2.2.3

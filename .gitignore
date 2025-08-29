@@ -1,0 +1,13 @@
+backend/.env
+backend/__pycache__/
+backend/.DS_Store
+
+sysOps/DOIs/
+sysOps/__pycache__/
+sysOps/dataOps/__pycache__/
+sysOps/dataOps/.DS_Store
+sysOps/.DS_Store
+
+frontend/paperion/.DS_Store
+frontend/paperion/node_modules/
+frontend/paperion/.next/

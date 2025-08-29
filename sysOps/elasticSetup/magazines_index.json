@@ -1,0 +1,62 @@
+{
+    "mappings": {
+        "properties": {
+            "ID": {
+                "type": "integer"
+            },
+            "ISSNP": {
+                "type": "keyword"
+            },
+            "ISSNE": {
+                "type": "keyword"
+            },
+            "Magazine": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "Abbr": {
+                "type": "text"
+            },
+            "Description": {
+                "type": "text"
+            },
+            "Publisher": {
+                "type": "text"
+            },
+            "JOURNALID": {
+                "type": "keyword"
+            },
+            "Site_URL": {
+                "type": "keyword"
+            },
+            "CATEGORY": {
+                "type": "text"
+            },
+            "SITEID_OLD": {
+                "type": "keyword"
+            },
+            "Previous_Title": {
+                "type": "text"
+            },
+            "Real_title": {
+                "type": "text"
+            },
+            "Years": {
+                "type": "keyword"
+            },
+            "Volumes": {
+                "type": "keyword"
+            },
+            "Prefix": {
+                "type": "keyword"
+            },
+            "Timeadded": {
+                "type": "date"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+name: paperion
+
+networks:
+  paperion-net:
+    external: true
+
+services:
+  backend:
+    image: yousb0t/paperion-backend:latest
+    container_name: paperion-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ES_HOST=http://paperion-elasticsearch:9200
+    networks:
+      - paperion-net
+
+  frontend:
+    image: yousb0t/paperion-frontend:latest
+    container_name: paperion-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000
+    networks:
+      - paperion-net
+    depends_on:
+      - backend
