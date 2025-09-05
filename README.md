@@ -1,4 +1,4 @@
-# Bookologia
+# Paperion
 
 Paperion is an academic search engine. Its main goal is to find any paper ever published within seconds. <br>
 Our database is built upon Elastic Search. It contains ~78 million papers metadata, including ~390,000 ingested papers, with its indexed content stored in text field. <br>
