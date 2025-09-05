@@ -1,7 +1,7 @@
 # Bookologia
 
-Paperion is an academic search engine. Its main goal is to find any paper ever published within seconds. 
-Our database is built upon Elastic Search. It contains ~78 million papers metadata, including ~390,000 ingested papers, with its indexed content stored in text field.
+Paperion is an academic search engine. Its main goal is to find any paper ever published within seconds. <br>
+Our database is built upon Elastic Search. It contains ~78 million papers metadata, including ~390,000 ingested papers, with its indexed content stored in text field. <br>
 It is open source, and can be self-hosted easily on Docker.
 
 ![welcome](./docs/img/2-demo.png)
@@ -13,16 +13,16 @@ See all screenshots and details at : [http://www.blankresearch.com/Paperion/](ht
 
 ## Features
 
-● Papers : Download ~78 million papers
-● Database : ~390,000 ingested papers in Elastic Search
-● Recommendations : Get similar papers based on content, or from same author, or same journal.
-● Search : Search by title and/or author and/or date -- or date range -- (more details below)
-● Deep Search : Search in the ingested papers content by entering a detailed description.
-● Collections : Organize and save papers in collections.
-● Notes : Highlight quotations from papers, and stick notes to them.
-● AI Summary : Summarize papers using OpenAI key.
+● Papers : Download ~78 million papers <br>
+● Database : ~390,000 ingested papers in Elastic Search <br>
+● Recommendations : Get similar papers based on content, or from same author, or same journal. <br>
+● Search : Search by title and/or author and/or date -- or date range -- (more details below) <br>
+● Deep Search : Search in the ingested papers content by entering a detailed description. <br>
+● Collections : Organize and save papers in collections. <br>
+● Notes : Highlight quotations from papers, and stick notes to them. <br>
+● AI Summary : Summarize papers using OpenAI key.<br><br>
 
-And for advanced users : 
+And for advanced users : <br>
 ● Ingestion engine to add more papers to the database. More details will be provided. 
 
 ## Installation
