@@ -4,9 +4,9 @@ Paperion is an academic search engine. Its main goal is to find any paper ever p
 Our database is built upon Elastic Search. It contains ~78 million papers metadata, including ~390,000 ingested papers, with its indexed content stored in text field.
 It is open source, and can be self-hosted easily on Docker.
 
-![welcome](./docs/img/2.png)
+![welcome](./docs/img/2-demo.png)
 
-![welcome](./docs/img/5.png)
+![welcome](./docs/img/5-demo.png)
 
 See all screenshots and details at : [http://www.blankresearch.com/Paperion/](http://www.blankresearch.com/Paperion/) 
 
