@@ -1,320 +1,342 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paperion - Academic Search Engine</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      .zoomed {
-        transform: scale(1.5);
-        z-index: 50;
-      }
-    </style>
-  </head>
 
-  <body class="overflow-x-hidden">
-    <div class="min-h-screen flex flex-col items-center justify-center">
-      <div class="p-10 mt-20 rounded-2xl max-w-2xl mb-4">
-        <div class="items-center justify-center flex flex-col gap-4 mb-7">
-          <div class="font-1001 text-[100px]">Paperion</div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paperion - Academic Search Engine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .zoomed {
+      transform: scale(1.5);
+      z-index: 50;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+  <div class="min-h-screen flex flex-col">
+
+    <div class="px-20 rounded-2xl max-w-full mb-14">
+      <div class="items-center mr-24 justify-end flex flex-row mb-2">
+        <div class="font-1001 text-[70px] ">Paperion</div>
       </div>
 
-      <div class="relative w-full slider-wrapper h-[520px] max-w-6xl">
-        <button
-          id="prevBtn"
-          class="absolute rounded-full -left-20 top-1/2 -translate-y-1/2 z-10 bg-gray-300 px-6 py-4 opacity-70 hover:bg-gray-500 hover:text-gray-300 text-gray-500 shadow"
-        >
+    </div>
+
+
+    <div class="items-center flex flex-col ">
+      <div class="flex flex-row gap-36 ">
+        <div class="items-center justify-center flex flex-col mb-2">
+          <div class="font-0200 text-[35px] whitespace-nowrap -mt-2 mb-8">
+            <span class="bg-[#ffec84] px-2">The only academic tool you need ! </span><br />
+            All
+            the papers ever published, <br />Content-based
+            recommendations, <br /> AI summaries ... and <span class="bg-[#ffec84] px-2">it's Open Source.</span> </div>
+        </div>
+
+        <div class="flex flex-row gap-14 mt-4 max-w-7xl ml-14 mb-10 justify-end items-center">
+          <div class="flex flex-col items-center gap-4  ">
+            <span class="font-0200 text-4xl">77742108</span>
+            <span class="font-0201 text-3xl text-gray-500">Papers</span>
+          </div>
+          <div class="flex flex-col items-center gap-4  ">
+            <span class="font-0200 text-4xl">48840</span>
+            <span class="font-0201 text-3xl text-gray-500">Magazines</span>
+          </div>
+          <div class="flex flex-col items-center gap-4  ">
+            <span class="font-0200 text-4xl">10612</span>
+            <span class="font-0201 text-3xl text-gray-500">Publishers</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative mt-6 -mb-10 w-full slider-wrapper h-[520px] max-w-6xl">
+        <button id="prevBtn"
+          class="absolute hover:pointer-cursor rounded-full -left-20 top-1/2 -translate-y-1/2 z-10 bg-gray-300 px-6 py-4 opacity-70 hover:bg-gray-500 hover:text-gray-300 text-gray-500 shadow">
           ◀
         </button>
         <div id="slider" class="flex gap-8 transition-transform duration-500">
-          <img
-            src="img/1.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/2.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/3.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/4.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/5.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/6.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/7.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/8.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/9.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/10.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/11.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/12.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/13.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/14.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/15.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/16.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/17.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
-          <img
-            src="img/18.png"
-            class="w-[700px] h-[400px] rounded-2xl shadow-md object-contain cursor-pointer transition-transform duration-300"
-          />
+          <img src="img/1.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/2.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/3.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/4.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/5.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/6.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/7.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/8.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/9.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/10.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/11.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/12.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/13.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/14.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/15.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/16.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/17.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
+          <img src="img/18.png"
+            class="w-[700px] h-[400px] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] object-contain cursor-pointer transition-transform duration-300" />
         </div>
-        <div
-          id="zoomModal"
-          class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50"
-        >
+        <div id="zoomModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50">
           <img id="zoomImg" class="max-w-full max-h-full rounded-xl" />
         </div>
-        <button
-          id="nextBtn"
-          class="absolute rounded-full -right-20 top-1/2 -translate-y-1/2 z-10 bg-gray-300 px-6 py-4 opacity-70 hover:bg-gray-500 hover:text-gray-300 text-gray-500 shadow"
-        >
+        <button id="nextBtn"
+          class="absolute rounded-full -right-20 top-1/2 -translate-y-1/2 z-10 bg-gray-300 px-6 py-4 opacity-70 hover:bg-gray-500 hover:text-gray-300 text-gray-500 shadow">
           ▶
         </button>
       </div>
-      <div
-        id="tooltip"
-        class="fixed text-white bg-black text-sm px-2 py-1 rounded hidden z-50 pointer-events-none"
-      >
+
+
+
+      <div id="tooltip" class="fixed text-white bg-black text-sm px-2 py-1 rounded hidden z-50 pointer-events-none">
         Click to exit
       </div>
 
+
+
       <div class="max-w-5xl flex flex-col gap-4 mb-10">
         <div class="flex gap-4 flex-row justify-center mb-4">
-          <button
-            onclick="showTab(0)"
-            class="px-6 py-2 button-color-menu font-0101 text-3xl rounded-full"
-          >
+          <button onclick="showTab(0)" class="px-6 py-2 button-color-menu font-0101 text-3xl rounded-full">
             Vision
           </button>
-          <button
-            onclick="showTab(1)"
-            class="px-6 py-2 button-color-menu font-0101 text-3xl rounded-full"
-          >
+          <button onclick="showTab(1)" class="px-6 py-2 button-color-menu font-0101 text-3xl rounded-full">
             Documentation
           </button>
-          <button
-            onclick="showTab(2)"
-            class="px-6 py-2 button-color-menu font-0101 text-3xl rounded-full"
-          >
+          <button onclick="showTab(2)" class="px-6 py-2 button-color-menu font-0101 text-3xl rounded-full">
             References
           </button>
         </div>
 
-        <div
-          class="bookolor-5-text tight-line font-0101 text-3xl ml-10 mt-4 mb-10"
-          id="tab-0"
-        >
-          Bookshelved is a social media built by readers, for readers.
+        <div class="bookolor-5-text tight-line font-0101 text-3xl ml-10 mt-4 mb-10" id="tab-0">
+
           <br /><br />
 
-          <mark class="px-4 py-2">Why build Bookshelved?</mark>
+          <mark class="px-6 py-3 rounded-full">What is Paperion?</mark>
           <br /><br />
 
-          We believe that reading is great for the world and that readers
-          deserve amazing digital tools and communities. <br /><br />
-
-          <mark class="px-4 py-2">Features ? </mark><br /><br />
-
-          Bookshelved included a list of features as follow: <br /><br />
-
-          ● Infos about millions books and authors <br />
-          ● Recommendation system that builds a profile around the user, and
-          suggest lists of books, either similar to a book or targetting the
-          user directly <br />
-          ● Journal to track your reading habits and visual charts for a
-          comprehensive book progress <br />
-          ● Library feature to organize books <br />
-          ● Note taking feature, supporting picture uploads, videos, links,
-          coloring and dynamic tags <br />
-          ● Club feature: where users can create clubs and host virtual events
-          around a book and publicly share posts on a group's home page <br />
-          ● Dynamic summarization engine, that summarizes the book to be read by
-          the club, and provides spoken ( and written ) summaries by chapter for
-          the club members <br />
-          ● Internal book search engine that provide direct links to every book
-          within the millions of books
+          Paperion is an academic search engine.
+          Its main goal is to find any paper ever published within seconds.
+          Our database is built upon Elastic Search. It contains ~78 million papers metadata,
+          including ~390,000 ingested papers, with its indexed content stored in text field.
           <br />
-          ● "Buy Me" link providing direct link to buy a physical copy <br />
-          ● Import your existing goodreads library <br />
-          ● Chat feature where users can talk to eachother, share pictures
-          etc...
+          The search engine is accompanied with various useful tools for academics.
           <br /><br />
+
+          <mark class="px-6 py-3 rounded-full">Features ? </mark><br /><br />
+
+          Paperion included a list of features as follow: <br /><br />
+
+          ● <span class="bg-[#ffec84] px-1">Papers :</span> Download ~78 million papers<br />
+          ● <span class="bg-[#ffec84] px-1">Database :</span> ~390,000 ingested papers in Elastic Search <br />
+          ● <span class="bg-[#ffec84] px-1">Recommendations :</span> Get similar papers based on content, or from same
+          author, or
+          same
+          journal.<br />
+          ● <span class="bg-[#ffec84] px-1">Search :</span> Search by title and/or author and/or date -- or date range
+          --
+          (more details below)<br />
+          ● <span class="bg-[#ffec84] px-1">Deep Search :</span> Search in the ingested papers content by entering a
+          detailed description.<br />
+
+
+          ● <span class="bg-[#ffec84] px-1">Collections :</span> Organize and save papers in collections.<br />
+          ● <span class="bg-[#ffec84] px-1">Notes :</span> Highlight quotations from papers, and stick notes to
+          them.
+          <br />
+          ● <span class="bg-[#ffec84] px-1">AI Summary :</span> Summarize papers using OpenAI key.
+          <br />
           <br />
 
-          <mark class="px-4 py-2">Who created this project? </mark><br /><br />
 
-          This start was founded by John Fish, with Youssef as a principal
-          founding engineer. <br />
-          The development for the project has halted in late 2024, as
-          Bookshelved was acquired.<br /><br />
+          <mark class="px-6 py-3 rounded-full">Search </mark><br /><br />
 
-          Bookshelved Founder :
-          <a
-            class="text-blue-800 underline"
-            target="_blank"
-            href="https://www.youtube.com/@thejohnfish/"
-            >John Fish</a
-          >
+          Paperion has a powerful search feature. To find any paper, you can follow the following syntax : <br />
           <br />
-          Main founding engineer :
-          <a
-            class="text-blue-800 underline"
-            target="_blank"
-            href="https://www.linkedin.com/in/yousbot/"
-            >Youssef (yousbot).</a
-          >
+          <span class="font-4003 text-[18px]">[title] -- [author] -- [> |
+            <][year][ASC | DESC] <br /><br />
+            1. If title or author is left empty, it means "All titles" or "All authors" <br />
+            2. If opeartor ( > or
+            < ) is left empty, it means equal "=" and returns exact date <br />
+            3. If ASC or DESC is not precised after year, the default is ASC. <br />
+            4. If year is not precised, it means "All years"
+            <br /><br /></span>
+          <span class="font-bold font-4003 text-[15px]"><span class="underline underline-offset-4">Various Search
+              Examples :
+            </span><br />
+            Business Cycle -- Schumpeter -- 1930 <br />
+            Business Cycle -- -- > 1930 ASC <br />
+            -- Schumpeter --
+            < 1930 DESC <br />
+            Business Cycle <br />
+            <br />
+          </span>
+
           <br />
+          <br />
+
+          <mark class="px-6 py-3 rounded-full">Database</mark><br /><br />
+          Our database is built over the mysql dump provided by the SciHub project. <br />
+          It contains ~78 million papers metadata including (Title, DOI, Authors, Publication Date, Issue ... ) <br />
+          We have parsed and ingested ~390,000 papers in the field (paperContent). Those papers constitute the entire
+          papers published before 2022 in Economics. <br />
+          Other indexes containing various other metadata like Publishers, Magazines. <br /><br />
+          The database is built over Docker, and is published as is with its data (50 Gb in size). <br /><br />
+
+          <mark class="px-6 py-3 rounded-full">Application</mark><br /><br />
+          The backend is built on FastAPI, and is distributed over Docker. As well as the frontend. No further
+          configuration is necessary, as the application can be used as is. <br />
+          The open source project can be downloaded <a class="text-blue-800 underline" target="_blank"
+            href="https://github.com/blankresearch/paperion">here.
+          </a>
+          <br /><br />
+
+          <mark class="px-6 py-3 rounded-full">Important Notice </mark><br /><br />
+          The purpose of this project is made for research purposes only, (ex; to get more information about the
+          distribution
+          of papers). No further usage purpose is encouraged,
+          including distribution nor sale. We do not encourage you to use it as to bypass the paywall of other various
+          platforms and publishers or copyright holders of the papers. Please contact researchers to get a copy of the
+          paper, or the publisher in question.
+          <br /><br />
+          <mark class="px-6 py-3 rounded-full">Who created this project? </mark><br /><br />
+
+          This start was founded by Youssef as a principal
+          founding engineer: <a class="text-blue-800 underline" target="_blank"
+            href="https://www.linkedin.com/in/yousbot/">Youssef
+            (yousbot).</a>
+          <br />
+          Find more projects at : <a class="text-blue-800 underline" target="_blank"
+            href="https://blankresearch.com">https://blankresearch.com
+          </a> <br />
+          Or visit our Github : <a class="text-blue-800 underline" target="_blank"
+            href="https://github.com/blankresearch">https://github.com/blankresearch
+          </a>
+
         </div>
         <div class="text-gray-600 font-authorname hidden" id="tab-1">
           <div class="text-lg text-white">
             <div>
-              <h2
-                class="bookolor-5-text tight-line font-0101 text-3xl ml-10 mt-4 mb-10"
-              >
-                Bookshelved is composed of the following elements : <br /><br />
+              <h2 class="bookolor-5-text tight-line font-0101 text-3xl ml-10 mt-4 mb-10">
+                Paperion is composed of the following elements : <br /><br />
 
-                ● Scraper engine : using Scrapy framework, in python. <br />
-                ● Recommendation engine : using Flask framework, in python.
+                ● Data Engine : using Scrapy framework, in python. <br />
+                ● Recommendation engine : using FastAPI framework, in python.
                 <br />
-                ● Summarization engine : using Flask frameworkl, in python.
+                ● Summarization engine : using OpenAI API, in python.
                 <br />
-                ● Bookshelved website : Next.js, tailwind <br />
-                ● Database : Elastic Search, Mysql, PostgreSQL <br />
-                ● Hosting : AWS, Heroku, PlanetScale, Vercel, Github Actions
-                (CI/CD) <br />
-                ● Monitoring : Grafana <br />
+                ● Paperion website : Next.js, tailwind <br />
+                ● Database : Elastic Search, SQLITE, MySQL <br />
+                ● Container : Docker <br />
+                <br /><br />
+                <mark class="px-6 py-3 rounded-full">Installation</mark><br /><br />
+                Comming soon...
               </h2>
             </div>
           </div>
+
         </div>
 
         <div class="hidden" id="tab-2">
           <div>
             <div
-              class="grid grid-cols-2 tight-line font-0101 text-3xl -ml-20 gap-x-6 gap-y-2 mt-4 mb-10 bookolor-5-text"
-            >
+              class="grid grid-cols-2 tight-line font-0101 text-3xl -ml-20 gap-x-6 gap-y-2 mt-4 mb-10 bookolor-5-text">
               <div class="text-right">Main founding engineer:</div>
               <div>
-                <a
-                  class="text-blue-800 underline"
-                  href="https://www.linkedin.com/in/yousbot/"
-                  target="_blank"
-                  >Youssef (yousbot)</a
-                >
+                <a class="text-blue-800 underline" href="https://www.linkedin.com/in/yousbot/" target="_blank">Youssef
+                  (yousbot)</a>
               </div>
 
               <div class="text-right">Blank Research:</div>
               <div>
-                <a
-                  class="text-blue-800 underline"
-                  href="https://blankresearch.com"
-                  target="_blank"
-                  >https://blankresearch.com</a
-                >
+                <a class="text-blue-800 underline" href="https://blankresearch.com"
+                  target="_blank">https://blankresearch.com</a>
+              </div>
+
+              <div class="text-right">Github:</div>
+              <div>
+                <a class="text-blue-800 underline" href="https://blankresearch.com"
+                  target="_blank">https://github.com/blankresearch</a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
+
     </div>
 
-    <script>
-      function updateSlider() {
-        slider.style.transform = `translateX(-${index * 100}%)`;
-      }
+  </div>
 
-      const slider = document.getElementById("slider");
-      const imgs = slider.querySelectorAll("img");
-      const imgWidth = imgs[0].offsetWidth + 32; // 32 = gap-8
+  <script>
+    function updateSlider() {
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }
 
-      let index = 0;
+    const slider = document.getElementById("slider");
+    const imgs = slider.querySelectorAll("img");
+    const imgWidth = imgs[0].offsetWidth + 32; // 32 = gap-8
 
-      document.getElementById("nextBtn").onclick = () => {
-        if (index < imgs.length - 1) index++;
-        slider.style.transform = `translateX(-${imgWidth * index}px)`;
-      };
+    let index = 0;
 
-      document.getElementById("prevBtn").onclick = () => {
-        if (index > 0) index--;
-        slider.style.transform = `translateX(-${imgWidth * index}px)`;
-      };
+    document.getElementById("nextBtn").onclick = () => {
+      if (index < imgs.length - 1) index++;
+      slider.style.transform = `translateX(-${imgWidth * index}px)`;
+    };
 
-      const zoomModal = document.getElementById("zoomModal");
-      const zoomImg = document.getElementById("zoomImg");
+    document.getElementById("prevBtn").onclick = () => {
+      if (index > 0) index--;
+      slider.style.transform = `translateX(-${imgWidth * index}px)`;
+    };
 
-      imgs.forEach((img) => {
-        img.addEventListener("click", () => {
-          zoomImg.src = img.src;
-          zoomModal.classList.remove("hidden");
-        });
+    const zoomModal = document.getElementById("zoomModal");
+    const zoomImg = document.getElementById("zoomImg");
+
+    imgs.forEach((img) => {
+      img.addEventListener("click", () => {
+        zoomImg.src = img.src;
+        zoomModal.classList.remove("hidden");
       });
+    });
 
-      zoomModal.addEventListener("click", () => {
-        zoomModal.classList.add("hidden");
-      });
+    zoomModal.addEventListener("click", () => {
+      zoomModal.classList.add("hidden");
+    });
 
-      const tooltip = document.getElementById("tooltip");
+    const tooltip = document.getElementById("tooltip");
 
-      zoomModal.addEventListener("mousemove", (e) => {
-        tooltip.style.left = `${e.clientX + 10}px`;
-        tooltip.style.top = `${e.clientY + 10}px`;
-        tooltip.classList.remove("hidden");
-      });
+    zoomModal.addEventListener("mousemove", (e) => {
+      tooltip.style.left = `${e.clientX + 10}px`;
+      tooltip.style.top = `${e.clientY + 10}px`;
+      tooltip.classList.remove("hidden");
+    });
 
-      zoomModal.addEventListener("mouseleave", () => {
-        tooltip.classList.add("hidden");
-      });
+    zoomModal.addEventListener("mouseleave", () => {
+      tooltip.classList.add("hidden");
+    });
 
-      function showTab(i) {
-        document
-          .querySelectorAll('[id^="tab-"]')
-          .forEach((el, idx) => el.classList.toggle("hidden", idx !== i));
-      }
-    </script>
-  </body>
+    function showTab(i) {
+      document
+        .querySelectorAll('[id^="tab-"]')
+        .forEach((el, idx) => el.classList.toggle("hidden", idx !== i));
+    }
+  </script>
+</body>
+
 </html>

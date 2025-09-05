@@ -27,6 +27,19 @@
   font-family: "0100", serif;
 }
 
+
+@font-face {
+  font-family: "4003";
+  src: url("./fonts/4003.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-4003 {
+  font-family: "4003", serif;
+}
+
+
 @font-face {
   font-family: "1001";
   src: url("./fonts/1001.ttf") format("truetype");
@@ -56,6 +69,30 @@
   src: url("./fonts/1776_Independence\ W00\ Bold.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+
+@font-face {
+  font-family: "0200";
+  src: url("./fonts/0200.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-0200 {
+  font-family: "0200", sans-serif;
+}
+
+
+@font-face {
+  font-family: "0201";
+  src: url("./fonts/0201.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-0201 {
+  font-family: "0201", sans-serif;
 }
 
 @font-face {
