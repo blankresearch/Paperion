@@ -5,6 +5,7 @@ Our database is built upon Elastic Search. It contains ~78 million papers metada
 It is open source, and can be self-hosted easily on Docker.
 
 ![welcome](./docs/img/2.png)
+
 ![welcome](./docs/img/5.png)
 
 See all screenshots and details at : [http://www.blankresearch.com/Paperion/](http://www.blankresearch.com/Paperion/) 
